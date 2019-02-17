@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<style>
+body {
+  background: #383B57 url('background.png') 0 0 no-repeat;
+  background-size: 100%;
+  font-family: 'Josefin Sans';font-size: 22px; color: #DBB76C; line-height: 40px;
+}
+.decom-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center {
+  padding-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+.content-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+img {
+    image-orientation: from-image;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+  border-color: #DBB76C;
+}
+</style>
+</head>
+
+<body>
+<div class="center">
+  <p><center>
+    <h2>You are asked to save the date for the wedding of</h2>
+    <h1>Joana Nhan<br />
+    &<br /> 
+    Garrett Jansen</h1>
+    <h2>on the 25th of August, 2019 in Westbury, NY.</h2>
+  </center></p>
+
+  <hr>
+
+  <center><h4><p id="countdown">Countdown loading...</p></h4></center>
+
+  <img src="couple.png" alt="Joana and Garrett together" class="responsive">
+
+  <center>
+    <p>
+    </p>
+  </center>
+
+</div>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 25 2019 12:00 PM").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("countdown").innerHTML = "Countdown:\n" + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
