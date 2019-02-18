@@ -8,7 +8,7 @@
 body {
   background: #383B57 url('background.png') 0 0 no-repeat;
   background-size: 100%;
-  font-family: 'Josefin Sans';font-size: 20px; color: #F3EFDF; line-height: 30px; 
+  font-family: 'Josefin Sans';font-size: 22px; color: #F3EFDF; line-height: 35px; 
 }
 .decom-center {
   margin: 0;
@@ -91,14 +91,18 @@ hr {
       <div class="responsive">
         <iframe width="100%" height="300" id="responsive" src="https://maps.google.com/maps?q=Westbury%20Manor%2C%20Westbury%2C%20NY&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
       </div>
-
+    <br />
     More information about the venue is available <a href="https://www.westburymanor.com/" target"_blank">here</a>.
   </p>
   </center>
   <br />
   <hr>
   <br>
-<center><p id="countdown">Countdown loading...</p></center>
+<center>
+  <p id="countdown">Countdown loading...</p>
+
+  <img src="bells.png" alt="Wedding bells" class="responsive-small">
+</center>
 </div>
 
 
@@ -122,8 +126,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = "Countdown:\n" + days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("countdown").innerHTML = "We hope to see you in " + days + " days, " + hours + " hours and "
+  + minutes + " minutes.";
     
   // If the count down is over, write some text 
   if (distance < 0) {
