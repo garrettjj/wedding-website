@@ -2,11 +2,13 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Monsieur La Doulaise' rel='stylesheet'>
 <style>
 body {
   background: #383B57 url('background.png') 0 0 no-repeat;
   background-size: 100%;
-  font-family: 'Josefin Sans';font-size: 22px; color: #DBB76C; line-height: 40px;
+  font-family: 'Josefin Sans';font-size: 20px; color: #F3EFDF; line-height: 30px; 
 }
 .decom-center {
   margin: 0;
@@ -17,7 +19,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .center {
-  padding-top: 10%;
+  padding-top: 12%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +34,17 @@ body {
 .responsive {
   width: 100%;
   height: auto;
+}
+.responsive-small {
+  width: 25%;
+  height: auto;
+}
+h1 {
+  color: #DBB76C;
+  font-family: 'Great Vibes';
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 60px;
 }
 img {
     image-orientation: from-image;
@@ -51,17 +64,19 @@ hr {
 
 <body>
 <div class="center">
+  <center><img src="rings.png" class="responsive-small"></center><br />
   <p><center>
-    <h2>You are asked to save the date for the wedding of</h2>
+    You are asked to save the date for the wedding of
     <h1>Joana Nhan<br />
-    &<br /> 
+    & <br />
     Garrett Jansen</h1>
-    <h2>on the 25th of August, 2019 in Westbury, NY.</h2>
+    on the 25th of August, 2019.
   </center></p>
 
+  <br />
   <hr>
 
-  <center><h4><p id="countdown">Countdown loading...</p></h4></center>
+  <center><p id="countdown">Countdown loading...</p></center>
 
   <img src="couple.png" alt="Joana and Garrett together" class="responsive">
 
