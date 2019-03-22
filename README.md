@@ -6,4 +6,4 @@ This is a simple single-page website for my wedding. This allows for easy deploy
 
 ## Link
 
-(jansenwedding.com)[https://www.jansenwedding.com]
+[jansenwedding.com](https://www.jansenwedding.com)
